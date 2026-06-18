@@ -76,7 +76,11 @@
                     {
                         "/": "/showcase/*",
                         "comment": "Product Showcase Details Page"
-                    }
+                    },
+                    {
+                        "/": "/order-ahead",
+                        "comment": "Order Ahead  Details Page"
+                    },
                 ]
             },
             {
@@ -96,7 +100,8 @@
                     "/my-account/my-orders/*/view-items",
                     "/instore-coupon/*",
                     "/instore-coupons/*",
-                    "/showcase/*"
+                    "/showcase/*",
+                    "/order-ahead"
                 ]
             }
         ]

@@ -1,18 +1,18 @@
 {
     "activitycontinuation": {
         "apps": [
-            "55V67PTHK5.com.centralmarket.ecom.qa"
+            "92BL3KXYL2.com.centralmarket.ecom.dev"
         ]
     },
     "appclips": {
-        "apps": ["55V67PTHK5.com.centralmarket.ecom.qa.Clip"]
+        "apps": ["92BL3KXYL2.com.centralmarket.ecom.dev.Clip"]
     },
     "applinks": {
         "apps": [],
         "details": [
             {
                 "appIDs": [
-                    "55V67PTHK5.com.centralmarket.ecom.qa"
+                    "92BL3KXYL2.com.centralmarket.ecom.dev"
                 ],
                 "components": [
                     {
@@ -84,7 +84,7 @@
                 ]
             },
             {
-                "appID": "55V67PTHK5.com.centralmarket.ecom.qa",
+                "appID": "92BL3KXYL2.com.centralmarket.ecom.dev",
                 "paths": [
                     "/",
                     "/my-account/buy-again",

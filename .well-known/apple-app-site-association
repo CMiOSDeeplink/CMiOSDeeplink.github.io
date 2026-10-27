@@ -1,109 +1,68 @@
 {
-    "activitycontinuation": {
-        "apps": [
-            "92BL3KXYL2.com.centralmarket.ecom.dev"
-        ]
+  "activitycontinuation": {
+    "apps": ["92BL3KXYL2.com.centralmarket.ecom.dev"]
+  },
+  "appclips": {
+    "apps": ["92BL3KXYL2.com.centralmarket.ecom.dev.Clip"]
+  },
+  "applinks": {
+    "apps": [],
+    "substitutionVariables": {
+      "localePrefix": ["", "/en", "/es"]
     },
-    "appclips": {
-        "apps": ["92BL3KXYL2.com.centralmarket.ecom.dev.Clip"]
-    },
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appIDs": [
-                    "92BL3KXYL2.com.centralmarket.ecom.dev"
-                ],
-                "components": [
-                    {
-                        "/": "/",
-                        "comment": "Matches home"
-                    },
-                    {
-                        "/": "my-account/buy-again",
-                        "comment": "Matches my items"
-                    },
-                    {
-                        "/": "/product/*",
-                        "comment": "Matches PDP"
-                    },
-                    {
-                        "?": {
-                            "q": "*"
-                        },
-                        "/": "/search/*",
-                        "comment": "Matches search"
-                    },
-                    {
-                        "/": "/my-account/my-orders/*",
-                        "comment": "Matches past orders"
-                    },
-                    {
-                        "/": "/product-category/*",
-                        "comment": "Matches product category"
-                    },
-                    {
-                        "?": {
-                            "category_isin": "*"
-                        },
-                        "/": "/recipes/browse",
-                        "comment": "Recipes browse"
-                    },
-                    {
-                        "/": "/recipes/saved-recipes",
-                        "comment": "Saved recipes"
-                    },
-                    {
-                        "/": "/recipes/planned-meals",
-                        "comment": "Recipes planned meals"
-                    },
-                    {
-                        "/": "/recipes/*",
-                        "comment": "Recipe Details page"
-                    },
-                    {
-                        "/": "/offers/*",
-                        "comment": "Offer Detail Page"
-                    },
-                    {
-                        "/": "/my-account/my-orders/*/view-items",
-                        "comment": "Accept Reject Subs items"
-                    },
-                    {
-                        "/": "/digital-offers/*",
-                        "comment": "Instore Offer Detail Page"
-                    },
-                    {
-                        "/": "/showcase/*",
-                        "comment": "Product Showcase Details Page"
-                    },
-                    {
-                        "/": "/order-ahead",
-                        "comment": "Order Ahead  Details Page"
-                    },
-                ]
-            },
-            {
-                "appID": "92BL3KXYL2.com.centralmarket.ecom.dev",
-                "paths": [
-                    "/",
-                    "/my-account/buy-again",
-                    "/product/*",
-                    "/search/*",
-                    "/my-account/my-orders/*",
-                    "/product-category/*",
-                    "/recipes/browse",
-                    "/recipes/saved-recipes",
-                    "/recipes/planned-meals",
-                    "/recipes/*",
-                    "/offers/*",
-                    "/my-account/my-orders/*/view-items",
-                    "/instore-coupon/*",
-                    "/instore-coupons/*",
-                    "/showcase/*",
-                    "/order-ahead"
-                ]
-            }
+    "details": [
+      {
+        "appIDs": ["92BL3KXYL2.com.centralmarket.ecom.dev"],
+        "components": [
+          { "/": "$(localePrefix)/" },
+          { "/": "$(localePrefix)/my-account/buy-again" },
+          { "/": "$(localePrefix)/product/*" },
+          {
+            "/": "$(localePrefix)/search",
+            "?": { "q": "*" }
+          },
+          {
+            "/": "$(localePrefix)/search/*",
+            "?": { "q": "*" }
+          },
+          { "/": "$(localePrefix)/my-account/my-orders/*" },
+          { "/": "$(localePrefix)/product-category/*" },
+          {
+            "/": "$(localePrefix)/recipes/browse",
+            "?": { "category_isin": "*" }
+          },
+          { "/": "$(localePrefix)/recipes/saved-recipes" },
+          { "/": "$(localePrefix)/recipes/planned-meals" },
+          { "/": "$(localePrefix)/recipes/*" },
+          { "/": "$(localePrefix)/offers/*" },
+          { "/": "$(localePrefix)/my-account/my-orders/*/view-items" },
+          { "/": "$(localePrefix)/digital-offers/*" },
+          { "/": "$(localePrefix)/showcase/*" },
+          { "/": "$(localePrefix)/order-ahead" }
         ]
-    }
+      },
+      {
+        "appID": "92BL3KXYL2.com.centralmarket.ecom.dev",
+        "paths": [
+          "/",
+          "/my-account/buy-again",
+          "/product/*",
+          "/search",
+          "/search/*",
+          "/my-account/my-orders/*",
+          "/product-category/*",
+          "/recipes/browse",
+          "/recipes/saved-recipes",
+          "/recipes/planned-meals",
+          "/recipes/*",
+          "/offers/*",
+          "/my-account/my-orders/*/view-items",
+          "/instore-coupon/*",
+          "/instore-coupons/*",
+          "/showcase/*",
+          "/order-ahead"
+        ]
+      }
+    ]
+  }
 }
